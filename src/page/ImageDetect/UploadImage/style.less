@@ -1,0 +1,53 @@
+@import '~antd/lib/style/themes/default.less';
+
+.uploadLogo {
+  display: flex;
+  align-items: center;
+
+  .uploadPreview {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed @border-color-base;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.02);
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border: 1px dashed @blue-6;
+    }
+
+    i {
+      font-size: 18px !important;
+      color: @text-color-secondary;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .uploadActionArea {
+    margin-left: 24px;
+  }
+
+  .uploadRemark {
+    margin-top: 8px;
+    color: @text-color-secondary;
+  }
+
+  :global {
+    .ant-upload.ant-upload-drag {
+      border: unset;
+      background: unset;
+    }
+
+    .ant-upload.ant-upload-drag .ant-upload {
+      padding: 0;
+    }
+  }
+}

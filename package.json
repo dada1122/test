@@ -1,0 +1,60 @@
+{
+  "private": true,
+  "version": "1.0.1",
+  "name": "industry_test_bigfish",
+  "scripts": {
+    "start": "bigfish dev",
+    "dev": "bigfish dev",
+    "devs": "bigfish dev --no-mock",
+    "test": "bigfish test",
+    "cov": "bigfish cov",
+    "build": "bigfish build",
+    "pack": "bigfish pack",
+    "lint": "bigfish lint --style",
+    "help": "bigfish help",
+    "version": "bigfish -v",
+    "precommit": "bigfish lint --staged --prettier --fix --style",
+    "ci": "bigfish lint && bigfish cov"
+  },
+  "dependencies": {
+    "@ali/tracker": "^4.1.1",
+    "@alipay/bigfish": "^2.10.0",
+    "@alipay/tech-ui": "^1.3.1",
+    "@ant-design/pro-layout": "^4.5.16",
+    "ant-design-pro": "^2.1.1",
+    "antd": "^3.15.0",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.1",
+    "echarts-for-react": "^1.2.0",
+    "immutability-helper": "^3.0.0",
+    "lodash": "^4.17.11",
+    "lodash-decorators": "^6.0.0",
+    "memoize-one": "^4.0.0",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "nzh": "^1.0.3",
+    "omit.js": "^1.0.0",
+    "path-to-regexp": "^2.1.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.5.0",
+    "rc-animate": "^2.4.4",
+    "react": "^16.8.4",
+    "react-container-query": "^0.9.1",
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-document-title": "^2.0.3",
+    "react-media": "^1.8.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.4"
+  },
+  "engines": {
+    "install-alinode": "4"
+  },
+  "ci": {
+    "version": "alinode=4"
+  },
+  "config": {
+    "assets": {
+      "hash": false
+    }
+  }
+}
